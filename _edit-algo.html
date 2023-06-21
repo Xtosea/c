@@ -10,18 +10,18 @@
     <!--[if IE]><link rel="shortcut icon" href="/favicon.ico"><![endif]-->
 
     <!-- Touch Icons - iOS and Android 2.1+ 180x180 pixels in size. -->
-    <link rel="apple-touch-icon-precomposed" href="/apple-touch-icon-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png">
 
     <!-- Firefox, Chrome, Safari, IE 11+ and Opera. 196x196 pixels in size. -->
-    <link rel="icon" href="/favicon.png">
+    <link rel="icon" href="favicon.png">
     
     <title>Edit Algorithm - Voter</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="css/info-pages.css" rel="stylesheet">
+    <link href="info-pages.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -41,7 +41,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#"><img src="/img/voter-32.png"></a>
+          <a class="navbar-brand" href="#"><img src="voter-32.png"></a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
@@ -58,7 +58,7 @@
       <!--h2 class="sub-header">Message</h2-->
       <div class="row">
         <div class="col-sm-4">
-          <form class="form-add" action="/edit-algo" method="post">
+          <form class="form-add" action="_edit-algo.html" method="post">
             <label for="inputKey" class="sr-only">Key</label>
             <input type="text" name="key" id="inputKey" class="form-control" placeholder="Key" required autofocus>
             <label for="inputWeight" class="sr-only">Weight</label>
@@ -114,14 +114,14 @@
       <div class="row">
         <p><italic>Separate terms with spaces only</italic></p>
         <!--div class="col-sm-4"> 
-          <form class="form-list" action="/edit-algo">
+          <form class="form-list" action="/_edit-algo.html">
             <label for="inputKey" class="sr-only"></label>
             <textarea name="author_whitelist" cols="60" rows="3"></textarea>
             <button class="btn btn-lg btn-primary btn-block" type="submit" value="POST">Update Author whitelist</button>
           </form>
         </div>
         <div class="col-sm-4">
-          <form class="form-list" action="/edit-algo">
+          <form class="form-list" action="_edit-algo.html">
             <label for="inputKey" class="sr-only"></label>
             <textarea name="author_blacklist" cols="60" rows="3"></textarea>
             <button class="btn btn-lg btn-primary btn-block" type="submit" value="POST">Update Author blacklist</button>
@@ -130,14 +130,14 @@
       </div>
       <div class="row">
         <div class="col-sm-4">
-          <form class="form-list" action="/edit-algo">
+          <form class="form-list" action="_edit-algo.html">
             <label for="inputKey" class="sr-only"></label>
             <textarea name="content_category_whitelist" cols="60" rows="3"></textarea>
             <button class="btn btn-lg btn-primary btn-block" type="submit" value="POST">Update Content Category whitelist</button>
           </form>
         </div>
         <div class="col-sm-4">
-          <form class="form-list" action="/edit-algo">
+          <form class="form-list" action="_edit-algo.html">
             <label for="inputKey" class="sr-only"></label>
             <textarea name="content_category_blacklist" cols="60" rows="3"></textarea>
             <button class="btn btn-lg btn-primary btn-block" type="submit" value="POST">Update Content Category blacklist</button>
@@ -146,14 +146,14 @@
       </div>
       <div class="row">
         <div class="col-sm-4">
-          <form class="form-list" action="/edit-algo">
+          <form class="form-list" action="_edit-algo.html">
             <label for="inputKey" class="sr-only"></label>
             <textarea name="content_word_whitelist" cols="60" rows="3"></textarea>
             <button class="btn btn-lg btn-primary btn-block" type="submit" value="POST">Update Content Word whitelist</button>
           </form>
         </div>
         <div class="col-sm-4">
-          <form class="form-list" action="/edit-algo">
+          <form class="form-list" action="_edit-algo.html">
             <label for="inputKey" class="sr-only"></label>
             <textarea name="content_word_blacklist" cols="60" rows="3"></textarea>
             <button class="btn btn-lg btn-primary btn-block" type="submit" value="POST">Update Content Word blacklist</button>
@@ -162,14 +162,14 @@
       </div>
       <div class="row">
         <div class="col-sm-4">
-          <form class="form-list" action="/edit-algo">
+          <form class="form-list" action="_edit-algo.html">
             <label for="inputKey" class="sr-only"></label>
             <textarea name="domain_whitelist" cols="60" rows="3"></textarea>
             <button class="btn btn-lg btn-primary btn-block" type="submit" value="POST">Update Domain whitelist</button>
           </form>
         </div>
         <div class="col-sm-4">
-          <form class="form-list" action="/edit-algo">
+          <form class="form-list" action="_edit-algo.html">
             <label for="inputKey" class="sr-only"></label>
             <textarea name="domain_blacklist" cols="60" rows="3"></textarea>
             <button class="btn btn-lg btn-primary btn-block" type="submit" value="POST">Update Domain blacklist</button>
@@ -181,7 +181,7 @@
         <h1 class="page-header">Export / Import Algorithm</h1>
         <!--h2 class="sub-header">Message</h2-->
         <div class="row">
-          <form class="form-list" action="/edit-algo" method="post">
+          <form class="form-list" action="/_edit-algo.html" method="post">
             <p><a class="btn btn-lg btn-primary btn-block" role="button" href="javascript:exportAlgo()">Export Current Algorithm</a></p>
             <label for="inputKey" class="sr-only"></label>
             <textarea name="json_algo" id="json_algo" cols="150" rows="10"></textarea>
@@ -690,9 +690,9 @@
     <!-- Placed at the end of the document so the pages load faster -->
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="jquery-1.12.4.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/editalgo.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <script src="editalgo.js"></script>
   </body>
 </html>
